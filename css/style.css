@@ -1,0 +1,67 @@
+body
+{
+    margin-top: 0px;
+}
+
+button
+{
+    color: white;
+}
+
+/* Sätt width på bilder till 450px. */
+img
+{
+    width: 450px;
+}
+
+p
+{
+    font-size: 30px;
+}
+
+/* Ändra länkfärg till vit och öka font-storlek. */
+a
+{
+    color: white;
+    font-size: 20px;
+}
+
+/* Ändra färg, bredd och margin på bootstrap-klassen border-header */
+.border-header
+{
+    width: 300px;
+    font-size: 50px;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Ändra bredd på bordet-text klassen. */
+.border-text
+{
+    max-width: 1200px;
+}
+
+
+/* Ändra på bootstrap btn-class */
+.btn 
+{
+    background-color: DodgerBlue; 
+    border: none; 
+    color: white; 
+    padding: 10px;
+    font-size: 22px; 
+    cursor: pointer; 
+}
+  
+/* Ändra bakgrundsfärg under */
+.btn:hover 
+{
+    background-color: RoyalBlue;
+}
+
+/* Ändra textfärg i info-klasser till vit. */ 
+.info
+{
+    color: white;
+}

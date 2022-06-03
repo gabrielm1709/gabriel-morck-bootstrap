@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Länka till bootstrap css. -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Länka till font awesome och bootstrap-icons css för logos och icons.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </head>
+  <!-- Sätt bakgrundsfärg till bg-dark. -->
+  <body class="bg-dark bg-gradient">
+    <!-- Bootstrap flexbox-container för "meny" där man kan klicka på varje term för att komma till den rubriken. -->
+    <div class="h4 p-4 d-flex flex-column text-white position-fixed h-100">
+        <!-- Home-button med font-awesome icon. -->
+        <button class="btn" onclick="window.location.href='#header'"><i class="fa fa-home"></i> Gabriel</button>
+        <!-- Alla länkar är länkade till respektive term-id som kan hittas nedanför. -->
+        <a class="nav-link" href="#element">Element</a>
+        <a class="nav-link" href="#html">HTML</a>
+        <a class="nav-link" href="#id">ID</a>
+        <a class="nav-link" href="#class">Class</a>
+        <a class="nav-link" href="#meta">Meta</a>
+        <a class="nav-link" href="#responsive">Responsive</a>
+        <a class="nav-link" href="#http">HTTP</a>
+        <a class="nav-link" href="#https">HTTPS</a>
+        <a class="nav-link" href="#dns">DNS</a>
+        <a class="nav-link" href="#cdn">CDN</a>
+        <a class="nav-link" href="#compressed">Compressed data</a>
+        <a class="nav-link" href="#local">Local bootstrap</a>
+        <a class="nav-link" href="#jquery">JQuery</a>
+        <a class="nav-link" href="#flexbox">Flexbox</a>
+        <a class="nav-link" href="#grid">Grid</a>
+        <a class="nav-link" href="#codes">Code snippets</a>
+        <a class="nav-link" href="#wasm">WASM</a>
+        <a class="nav-link" href="#chromium">Chromium</a>
+        <a class="nav-link" href="#svg">svg</a>
+        <a class="nav-link" href="#png24">png24</a>
+    </div>
+    <!-- Bootstrap flexbox-container där alla info och rubriker för termerna finns. -->
+    <div class="d-flex flex-column align-items-center info">
+      <b class="bi bi-bootstrap-fill fa-4x" id="header">ootstrap</b>
+      <!-- Border som används som en rubrik för varje term. Alla termer har ett eget id som används för att vi ska kunna länka till respektive term i sidebaren.-->
+      <span id="element" class="border-header border border-dark rounded text-center text-center w-25 p-1">Element</span>
+      <!-- Definerar ett område med text/information om varje term. Använder border-text klassen där jag definerat en max-bredd i style.css för att texten inte ska gå över sidebaren. -->
+      <div class="border-text">
+          <p>Ett element inom html är en typ av komponent som används inom webbsidor.</p>
+      </div>
+      <span id="html" class="border-header border border-dark rounded text-center w-25 p-1">HTML</span>
+      <div class="border-text">
+          <p>HTML är ett scriptspråk som används för att skapa och ange den grundläggande strukturen för en hemsida. HTML är tillsammans med HTTP och IP standarden för www-hemsidor.</p>
+      </div>
+      <span id="id" class="border-header border border-dark rounded text-center w-25 p-1">ID</span>
+      <div class="border-text">
+          <p>ID är ett namn som man ger till ETT specifikt element. Ett ID kan även förändra utseendet av ett element.</p>
+      </div>
+      <span id="class" class="border-header border border-dark rounded text-center w-25 p-1">Class</span>
+      <div class="border-text">
+          <p>Class fungerar som ett ID som man kan ge till flera element (inte bara ett) och precis som ett ID kan en klass ändra utseendet av ett element.</p>
+      </div>
+      <span id="meta" class="border-header border border-dark rounded text-center w-25 p-1">Meta</span>
+      <div class="border-text">
+          <p>En Meta(tagg) är ett element som används för att ange vilken typ av data som används inom en HTML-fil. Exempelvis vilket charset som används.</p>
+      </div>
+      <span id="responsive" class="border-header border border-dark rounded text-center w-25 p-1">Responsive</span>
+      <div class="border-text">
+          <p>Att en hemsida är responsiv innebär att den kan ändra sin layout utifrån vilket skärmstorlek eller upplösning som användaren har. Det innebär även att den ska kunna anpassa sig till både mobil- och datorenheter</p>
+      </div>
+      <span id="http" class="border-header border border-dark rounded text-center w-25 p-1">HTTP</span>
+      <div class="border-text">
+          <p>HTTP (Hypertext transfer protocol) är ett protokoll som används för att överföra webbsidor (html-, css- och javascript-filer) från en server till en klient.</p>
+      </div>
+      <span id="https" class="border-header border-header border border-dark rounded text-center w-25 p-1">HTTPS</span>
+      <div class="border-text">
+          <p>HTTPS (Hypertext transfer protocol secure) är ett liknande protokoll som HTTP men som överför krypterad data i form av TSL-encryption. Detta innebär att andra personer inte kan ta reda på vad som skickats mellan din dator och webbservern utan att ha nyckeln för att kunna dekryptera.</p>
+      </div>
+      <span id="dns" class="border-header border-header border border-dark rounded text-center w-25 p-1">DNS</span>
+      <div class="border-text text-center">
+          <p>DNS är ett system som översätter domännamn till ip-adresser.</p>
+          <!-- Bild som visar hur DNS fungerar. Använder bootstrap rounded för att få rundade kanter. -->
+          <img src="img/dns.png" class="rounded">
+      </div>
+      <span id="cdn" class="border-header border-header border border-dark rounded text-center w-25 p-1">CDN</span>
+      <div class="border-text">
+            <p>Ett CDN (content delivery network) är en grupp geografiskt utspridda nätverk som används för att minska latency när man skickar paket (information).</p>
+      </div> 
+      <span id="compressed" class="border-header border-header border border-dark rounded text-center w-25 p-1">Compressed data</span>
+      <div class="border-text">
+          <p>Datakompression är ett sätt att göra om data och minska information utan att senare förlora data när man extrahera. Data görs om så att enbart vissa delar återstår som senare kan användas flera gånger för att återuppbygga den ursprungliga datan.</p>
+      </div>
+      <span id="local" class="border-header border-header border border-dark rounded text-center w-25 p-1">Local bootstrap</span>
+      <div class="border-text">
+          <p>Lokal bootstrap innebär att man har en egen version av bootstrap nedladdad istället för att länka över nätet.</p>
+      </div>
+      <span id="jquery" class="border-header border-header border border-dark rounded text-center w-25 p-1">JQuery</span>
+      <div class="border-text">
+          <p>JQuery är ett javascript bibliotek som används för att förenkla olika processer inom utvecklingen. Ett exempel på detta är AJAX-operationer som används för att man kan ska kunna ändra kod i en hemsida i real-tid</p>
+      </div> 
+      <span id="flexbox" class="border-header border-header border border-dark rounded text-center w-25 p-1">Flexbox</span>
+      <div class="border-text">
+          <p>Flexbox är en modul inom CSS som används för att skapa 1D layouter (antingen rader eller kolumner) med items som anpassar sig utifrån skärmstorlek och upplösning. Det är därför enklare att exempelvis centrera saker på hemsidan.</p>
+      </div>
+      <span id="grid" class="border-header border-header border border-dark rounded text-center w-25 p-1">Grid</span>
+      <div class="border-text">
+          <p>Grid är en modul inom CSS som likt flexbox som låter dig skapa rutnätslayouter som exempelvis kan visa information. Skillnaden mellan grid och flexbox är att grid även kan användas för att skapa 2D layouter, alltså rader och kolumner samtidigt.</p> 
+      </div>
+      <span id="codes" class="border-header border-header border border-dark rounded text-center w-25 p-1">Code snippets</span>
+      <div class="border-text">
+          <p>Code snippets är delar av kod/program som används för att man enklare ska kunna köra om en viss del av kod utan att behöva köra hela programmet.</p>
+      </div>
+      <span id="wasm" class="border-header border-header border border-dark rounded text-center w-25 p-1">WASM</span>
+      <div class="border-text">
+          <p>WASM (WebAssembly) är ett binärt kodformat som körs i moderna webbläsare. Det används för att tillåta lågnivå-språk som exempelvis c/c++ att kunna köras på webben.</p>
+      </div>
+      <span id="chromium" class="border-header border-header border border-dark rounded text-center w-25 p-1">Chromium</span>
+      <div class="border-text">
+          <p>Chromium är en webbläsare med öppen källkod från Google.</p>
+      </div>
+      <span id="svg" class="border-header border-header border border-dark rounded text-center w-25 p-1">SVG</span>
+      <div class="border-text">
+          <p>SVG är ett vektorgrafiskt format för 2d bilder. SVG filer defineras genom xml-textfiler.</p>
+      </div>
+      <span id="png24" class="border-header border-header border border-dark rounded text-center w-25 p-1">PNG24</span>
+      <div class="border-text">
+          <p>PNG24 är ett png-format som stödjer rgb-färger. Varje kanal går från 0-255 (8 bit) och 3 färgkanaler resulterar då i 24 bit (3x8), därav PNG24.</p>
+      </div>
+    </div>
+  </body>
+</html>
